@@ -31,7 +31,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <!-- Lazy load the images -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@16.1.0/dist/lazyload.min.js"></script>
+    <!-- / Lazy -->
 
     <!-- Fathom - beautiful, simple website analytics -->
     <script
@@ -41,101 +45,69 @@
     ></script>
     <!-- / Fathom -->
 
-    <title>📸 wfh.toys 📸</title>
+    <title>WFH Toys</title>
   </head>
   <body>
     <div
-      class="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8"
+      class="relative bg-gray-100 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8 h-full"
     >
       <div class="absolute inset-0">
         <div class="bg-white h-1/3 sm:h-2/3"></div>
       </div>
       <div class="relative max-w-7xl mx-auto">
+        <!-- Title and subtitle -->
         <div class="text-center">
-          <h2
-            class="text-3xl leading-9 tracking-tight font-extrabold text-gray-900 sm:text-4xl sm:leading-10"
+          <h1
+            class="inline-flex uppercase text-4xl leading-9 tracking-tight font-extrabold text-gray-900 sm:text-4xl sm:leading-10"
           >
-            wfh.toys
-          </h2>
+            WFH
+            <svg
+              class="h-12 w-12"
+              fill="#000000"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 64 64"
+              x="0px"
+              y="0px"
+            >
+              <title>Tripod with camera</title>
+              <g data-name="Layer 3">
+                <path
+                  d="M18.5,15a.5.5,0,1,1-.5.5A.5.5,0,0,1,18.5,15Zm-2,15h26A2.5,2.5,0,0,0,45,27.5V16H35.49a7.5,7.5,0,1,1-12,0h-3.6a1.49,1.49,0,0,1-2.82,0H14V27.5A2.5,2.5,0,0,0,16.5,30ZM24,9.5A1.5,1.5,0,0,0,22.5,8h-5A1.5,1.5,0,0,0,16,9.5V10h8ZM17.09,15H14V13.5A2.5,2.5,0,0,1,16.5,11h9.64L27,8.34A.49.49,0,0,1,27.5,8h11a.49.49,0,0,1,.47.34L39.86,11H42.5A2.5,2.5,0,0,1,45,13.5V15H34.58a7.45,7.45,0,0,0-10.16,0H19.91a1.49,1.49,0,0,0-2.82,0Zm11-3.2a.49.49,0,0,0,.4.2h9a.49.49,0,0,0,.4-.2.5.5,0,0,0,.08-.43l-.27-1a.5.5,0,1,0-1,.26l.1.37h-7.7l.1-.37a.5.5,0,1,0-1-.26l-.27,1A.5.5,0,0,0,28.1,11.8ZM29.5,16A4.5,4.5,0,1,1,25,20.5,4.51,4.51,0,0,1,29.5,16ZM29,19.5A1.5,1.5,0,1,0,27.5,21,1.5,1.5,0,0,0,29,19.5ZM31,22a1,1,0,1,0,1-1A1,1,0,0,0,31,22Zm-3.5-3a.5.5,0,1,0,.5.5A.5.5,0,0,0,27.5,19Zm2-5A6.5,6.5,0,1,1,23,20.5,6.51,6.51,0,0,1,29.5,14Zm0,1A5.5,5.5,0,1,0,35,20.5,5.51,5.51,0,0,0,29.5,15Zm24,15.52a1.48,1.48,0,0,0-1.15-.39L51,30.25v6.5l1.36.12h.14a1.52,1.52,0,0,0,1.5-1.5V31.62A1.48,1.48,0,0,0,53.51,30.52ZM36,35.38l14,1.27v-6.3L36,31.62ZM25,35.5a1.64,1.64,0,0,0,.09.5H35V31H25ZM32.53,37H26.48L14.17,53.61A1.49,1.49,0,0,0,14,55.18a1.5,1.5,0,0,0,2.54.21L28,40V54.5a1.5,1.5,0,0,0,3,0V40L42.42,55.39a1.5,1.5,0,1,0,2.41-1.78Z"
+                ></path>
+              </g>
+            </svg>
+            Toys
+          </h1>
           <p
             class="mt-3 max-w-2xl mx-auto text-xl leading-7 text-gray-500 sm:mt-4"
           >
             All of the tools and toys you need to work from home in one place.
           </p>
         </div>
-        <!-- <div
-          class="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none"
+        <!-- Video section -->
+        <div class="text-center">
+          <h2
+            class="mt-10 inline-flex text-3xl leading-9 tracking-tight font-bold text-gray-900 sm:text-3xl sm:leading-10"
+          >
+            Video
+          </h2>
+        </div>
+        <div
+          class="mt-4 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none"
         >
-          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+          <div
+            class="bg-white flex flex-col rounded-lg shadow-lg overflow-hidden"
+          >
             <div class="flex-shrink-0">
               <img
-                class="h-48 w-full object-cover"
-                src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                class="h-64 w-full object-contain"
+                src="assets/img/a7riv.jpg"
                 alt=""
               />
             </div>
-            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1 bg-gray-100 p-6 flex flex-col justify-between">
               <div class="flex-1">
-                <p class="text-sm leading-5 font-medium text-indigo-600">
-                  <a href="#" class="hover:underline">
-                    Blog
-                  </a>
-                </p>
-                <a href="#" class="block">
-                  <h3
-                    class="mt-2 text-xl leading-7 font-semibold text-gray-900"
-                  >
-                    Boost your conversion rate
-                  </h3>
-                  <p class="mt-3 text-base leading-6 text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Architecto accusantium praesentium eius, ut atque fuga
-                    culpa, similique sequi cum eos quis dolorum.
-                  </p>
-                </a>
-              </div>
-              <div class="mt-6 flex items-center">
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img
-                      class="h-10 w-10 rounded-full"
-                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="ml-3">
-                  <p class="text-sm leading-5 font-medium text-gray-900">
-                    <a href="#" class="hover:underline">
-                      Roel Aufderhar
-                    </a>
-                  </p>
-                  <div class="flex text-sm leading-5 text-gray-500">
-                    <time datetime="2020-03-16">
-                      Mar 16, 2020
-                    </time>
-                    <span class="mx-1">
-                      &middot;
-                    </span>
-                    <span>
-                      6 min read
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-            <div class="flex-shrink-0">
-              <img
-                class="h-48 w-full object-cover"
-                src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
-                alt=""
-              />
-            </div>
-            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-              <div class="flex-1">
-                <p class="text-sm leading-5 font-medium text-indigo-600">
+                <p class="text-sm leading-5 font-medium text-red-500">
                   <a href="#" class="hover:underline">
                     Video
                   </a>
@@ -144,106 +116,244 @@
                   <h3
                     class="mt-2 text-xl leading-7 font-semibold text-gray-900"
                   >
-                    How to use search engine optimization to drive sales
+                    Sony α7R III/IV
                   </h3>
                   <p class="mt-3 text-base leading-6 text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Velit facilis asperiores porro quaerat doloribus, eveniet
-                    dolore. Adipisci tempora aut inventore optio animi., tempore
-                    temporibus quo laudantium.
+                    Small, light, mirrorless, and full frame. The α7R IV is the
+                    top-of-the-line version but the α7 III and α7R III perform
+                    basically the same.
                   </p>
                 </a>
               </div>
-              <div class="mt-6 flex items-center">
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img
-                      class="h-10 w-10 rounded-full"
-                      src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="ml-3">
-                  <p class="text-sm leading-5 font-medium text-gray-900">
-                    <a href="#" class="hover:underline">
-                      Brenna Goyette
-                    </a>
-                  </p>
-                  <div class="flex text-sm leading-5 text-gray-500">
-                    <time datetime="2020-03-16">
-                      Mar 16, 2020
-                    </time>
-                    <span class="mx-1">
-                      &middot;
-                    </span>
-                    <span>
-                      6 min read
-                    </span>
-                  </div>
-                </div>
+              <div class="mt-6 flex justify-center">
+                <a href="https://amzn.to/2ZpjDrQ" target="_blank">
+                  <button
+                    class="text-sm bg-transparent hover:bg-red-200 text-gray-700 font-normal hover:text-gray-700 py-2 px-4 border border-gray-500 hover:border-transparent rounded"
+                  >
+                    $3,498 on Amazon
+                  </button>
+                </a>
               </div>
             </div>
           </div>
-          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+        </div>
+        <!-- End video section -->
+        <!-- Audio section -->
+        <div class="text-center">
+          <h2
+            class="mt-10 inline-flex text-3xl leading-9 tracking-tight font-bold text-gray-900 sm:text-3xl sm:leading-10"
+          >
+            Audio
+          </h2>
+        </div>
+        <div
+          class="mt-4 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none"
+        >
+          <div
+            class="bg-white flex flex-col rounded-lg shadow-lg overflow-hidden"
+          >
             <div class="flex-shrink-0">
               <img
-                class="h-48 w-full object-cover"
-                src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+                class="h-64 w-full object-contain"
+                src="assets/img/a7riv.jpg"
                 alt=""
               />
             </div>
-            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1 bg-gray-100 p-6 flex flex-col justify-between">
               <div class="flex-1">
-                <p class="text-sm leading-5 font-medium text-indigo-600">
-                  <a href="#" class="hover:underline"> Case Study</a>
+                <p class="text-sm leading-5 font-medium text-red-500">
+                  <a href="#" class="hover:underline">
+                    Audio
+                  </a>
                 </p>
                 <a href="#" class="block">
                   <h3
                     class="mt-2 text-xl leading-7 font-semibold text-gray-900"
                   >
-                    Improve your customer experience
+                    Sony α7R III/IV
                   </h3>
                   <p class="mt-3 text-base leading-6 text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sint harum rerum voluptatem quo recusandae magni placeat
-                    saepe molestiae, sed excepturi cumque corporis perferendis
-                    hic.
+                    Small, light, mirrorless, and full frame. The α7R IV is the
+                    top-of-the-line version but the α7 III and α7R III perform
+                    basically the same.
                   </p>
                 </a>
               </div>
-              <div class="mt-6 flex items-center">
-                <div class="flex-shrink-0">
-                  <a href="#">
-                    <img
-                      class="h-10 w-10 rounded-full"
-                      src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="ml-3">
-                  <p class="text-sm leading-5 font-medium text-gray-900">
-                    <a href="#" class="hover:underline">
-                      Daniela Metz
-                    </a>
-                  </p>
-                  <div class="flex text-sm leading-5 text-gray-500">
-                    <time datetime="2020-03-16">
-                      Mar 16, 2020
-                    </time>
-                    <span class="mx-1">
-                      &middot;
-                    </span>
-                    <span>
-                      6 min read
-                    </span>
-                  </div>
-                </div>
+              <div class="mt-6 flex justify-center">
+                <a href="https://amzn.to/2ZpjDrQ" target="_blank">
+                  <button
+                    class="text-sm bg-transparent hover:bg-red-200 text-gray-700 font-normal hover:text-gray-700 py-2 px-4 border border-gray-500 hover:border-transparent rounded"
+                  >
+                    $3,498 on Amazon
+                  </button>
+                </a>
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
+        <!-- End audio section -->
+        <!-- Video Accessories section -->
+        <div class="text-center">
+          <h2
+            class="mt-10 inline-flex text-3xl leading-9 tracking-tight font-bold text-gray-900 sm:text-3xl sm:leading-10"
+          >
+            Video Accessories
+          </h2>
+        </div>
+        <div
+          class="mt-4 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none"
+        >
+          <div
+            class="bg-white flex flex-col rounded-lg shadow-lg overflow-hidden"
+          >
+            <div class="flex-shrink-0">
+              <img
+                class="h-64 w-full object-contain"
+                src="assets/img/a7riv.jpg"
+                alt=""
+              />
+            </div>
+            <div class="flex-1 bg-gray-100 p-6 flex flex-col justify-between">
+              <div class="flex-1">
+                <p class="text-sm leading-5 font-medium text-red-500">
+                  <a href="#" class="hover:underline">
+                    Video Accessory
+                  </a>
+                </p>
+                <a href="#" class="block">
+                  <h3
+                    class="mt-2 text-xl leading-7 font-semibold text-gray-900"
+                  >
+                    Sony α7R III/IV
+                  </h3>
+                  <p class="mt-3 text-base leading-6 text-gray-500">
+                    Small, light, mirrorless, and full frame. The α7R IV is the
+                    top-of-the-line version but the α7 III and α7R III perform
+                    basically the same.
+                  </p>
+                </a>
+              </div>
+              <div class="mt-6 flex justify-center">
+                <a href="https://amzn.to/2ZpjDrQ" target="_blank">
+                  <button
+                    class="text-sm bg-transparent hover:bg-red-200 text-gray-700 font-normal hover:text-gray-700 py-2 px-4 border border-gray-500 hover:border-transparent rounded"
+                  >
+                    $3,498 on Amazon
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End video accessory section -->
+        <!-- Audio Accessories section -->
+        <div class="text-center">
+          <h2
+            class="mt-10 inline-flex text-3xl leading-9 tracking-tight font-bold text-gray-900 sm:text-3xl sm:leading-10"
+          >
+            Audio Accessories
+          </h2>
+        </div>
+        <div
+          class="mt-4 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none"
+        >
+          <div
+            class="bg-white flex flex-col rounded-lg shadow-lg overflow-hidden"
+          >
+            <div class="flex-shrink-0">
+              <img
+                class="h-64 w-full object-contain"
+                src="assets/img/a7riv.jpg"
+                alt=""
+              />
+            </div>
+            <div class="flex-1 bg-gray-100 p-6 flex flex-col justify-between">
+              <div class="flex-1">
+                <p class="text-sm leading-5 font-medium text-red-500">
+                  <a href="#" class="hover:underline">
+                    Video Accessory
+                  </a>
+                </p>
+                <a href="#" class="block">
+                  <h3
+                    class="mt-2 text-xl leading-7 font-semibold text-gray-900"
+                  >
+                    Sony α7R III/IV
+                  </h3>
+                  <p class="mt-3 text-base leading-6 text-gray-500">
+                    Small, light, mirrorless, and full frame. The α7R IV is the
+                    top-of-the-line version but the α7 III and α7R III perform
+                    basically the same.
+                  </p>
+                </a>
+              </div>
+              <div class="mt-6 flex justify-center">
+                <a href="https://amzn.to/2ZpjDrQ" target="_blank">
+                  <button
+                    class="text-sm bg-transparent hover:bg-red-200 text-gray-700 font-normal hover:text-gray-700 py-2 px-4 border border-gray-500 hover:border-transparent rounded"
+                  >
+                    $3,498 on Amazon
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End audio accessory section -->
+        <!-- Software section -->
+        <div class="text-center">
+          <h2
+            class="mt-10 inline-flex text-3xl leading-9 tracking-tight font-bold text-gray-900 sm:text-3xl sm:leading-10"
+          >
+            Software
+          </h2>
+        </div>
+        <div
+          class="mt-4 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none"
+        >
+          <div
+            class="bg-white flex flex-col rounded-lg shadow-lg overflow-hidden"
+          >
+            <div class="flex-shrink-0">
+              <img
+                class="h-64 w-full object-contain"
+                src="assets/img/a7riv.jpg"
+                alt=""
+              />
+            </div>
+            <div class="flex-1 bg-gray-100 p-6 flex flex-col justify-between">
+              <div class="flex-1">
+                <p class="text-sm leading-5 font-medium text-red-500">
+                  <a href="#" class="hover:underline">
+                    Software
+                  </a>
+                </p>
+                <a href="#" class="block">
+                  <h3
+                    class="mt-2 text-xl leading-7 font-semibold text-gray-900"
+                  >
+                    Sony α7R III/IV
+                  </h3>
+                  <p class="mt-3 text-base leading-6 text-gray-500">
+                    Small, light, mirrorless, and full frame. The α7R IV is the
+                    top-of-the-line version but the α7 III and α7R III perform
+                    basically the same.
+                  </p>
+                </a>
+              </div>
+              <div class="mt-6 flex justify-center">
+                <a href="https://amzn.to/2ZpjDrQ" target="_blank">
+                  <button
+                    class="text-sm bg-transparent hover:bg-red-200 text-gray-700 font-normal hover:text-gray-700 py-2 px-4 border border-gray-500 hover:border-transparent rounded"
+                  >
+                    $3,498 on Amazon
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End software section -->
       </div>
     </div>
   </body>
