@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "All of the tools to work from home in one place.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "",
   "license": "ISC",
   "dependencies": {
