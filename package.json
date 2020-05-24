@@ -4,8 +4,14 @@
   "description": "All of the tools to work from home in one place.",
   "main": "index.js",
   "author": "",
+  "repository": "https://github.com/cpdis/wfh-toys",
   "license": "ISC",
+  "scripts": {
+    "build:css": "postcss styles/styles.css -o styles/output.css"
+  },
   "dependencies": {
+    "autoprefixer": "^9.8.0",
+    "postcss-cli": "^7.1.1",
     "tailwindcss": "^1.4.6"
   }
 }

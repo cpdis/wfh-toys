@@ -3485,6 +3485,10 @@ video {
   --bg-opacity: 0.75;
 }
 
+.bg-opacity-98 {
+  --bg-opacity: 0.98;
+}
+
 .bg-opacity-100 {
   --bg-opacity: 1;
 }
@@ -3505,6 +3509,10 @@ video {
   --bg-opacity: 0.75;
 }
 
+.hover\:bg-opacity-98:hover {
+  --bg-opacity: 0.98;
+}
+
 .hover\:bg-opacity-100:hover {
   --bg-opacity: 1;
 }
@@ -3523,6 +3531,10 @@ video {
 
 .focus\:bg-opacity-75:focus {
   --bg-opacity: 0.75;
+}
+
+.focus\:bg-opacity-98:focus {
+  --bg-opacity: 0.98;
 }
 
 .focus\:bg-opacity-100:focus {
@@ -21915,6 +21927,10 @@ h2 {
     --bg-opacity: 0.75;
   }
 
+  .sm\:bg-opacity-98 {
+    --bg-opacity: 0.98;
+  }
+
   .sm\:bg-opacity-100 {
     --bg-opacity: 1;
   }
@@ -21935,6 +21951,10 @@ h2 {
     --bg-opacity: 0.75;
   }
 
+  .sm\:hover\:bg-opacity-98:hover {
+    --bg-opacity: 0.98;
+  }
+
   .sm\:hover\:bg-opacity-100:hover {
     --bg-opacity: 1;
   }
@@ -21953,6 +21973,10 @@ h2 {
 
   .sm\:focus\:bg-opacity-75:focus {
     --bg-opacity: 0.75;
+  }
+
+  .sm\:focus\:bg-opacity-98:focus {
+    --bg-opacity: 0.98;
   }
 
   .sm\:focus\:bg-opacity-100:focus {
@@ -40336,6 +40360,10 @@ h2 {
     --bg-opacity: 0.75;
   }
 
+  .md\:bg-opacity-98 {
+    --bg-opacity: 0.98;
+  }
+
   .md\:bg-opacity-100 {
     --bg-opacity: 1;
   }
@@ -40356,6 +40384,10 @@ h2 {
     --bg-opacity: 0.75;
   }
 
+  .md\:hover\:bg-opacity-98:hover {
+    --bg-opacity: 0.98;
+  }
+
   .md\:hover\:bg-opacity-100:hover {
     --bg-opacity: 1;
   }
@@ -40374,6 +40406,10 @@ h2 {
 
   .md\:focus\:bg-opacity-75:focus {
     --bg-opacity: 0.75;
+  }
+
+  .md\:focus\:bg-opacity-98:focus {
+    --bg-opacity: 0.98;
   }
 
   .md\:focus\:bg-opacity-100:focus {
@@ -58757,6 +58793,10 @@ h2 {
     --bg-opacity: 0.75;
   }
 
+  .lg\:bg-opacity-98 {
+    --bg-opacity: 0.98;
+  }
+
   .lg\:bg-opacity-100 {
     --bg-opacity: 1;
   }
@@ -58777,6 +58817,10 @@ h2 {
     --bg-opacity: 0.75;
   }
 
+  .lg\:hover\:bg-opacity-98:hover {
+    --bg-opacity: 0.98;
+  }
+
   .lg\:hover\:bg-opacity-100:hover {
     --bg-opacity: 1;
   }
@@ -58795,6 +58839,10 @@ h2 {
 
   .lg\:focus\:bg-opacity-75:focus {
     --bg-opacity: 0.75;
+  }
+
+  .lg\:focus\:bg-opacity-98:focus {
+    --bg-opacity: 0.98;
   }
 
   .lg\:focus\:bg-opacity-100:focus {
@@ -77178,6 +77226,10 @@ h2 {
     --bg-opacity: 0.75;
   }
 
+  .xl\:bg-opacity-98 {
+    --bg-opacity: 0.98;
+  }
+
   .xl\:bg-opacity-100 {
     --bg-opacity: 1;
   }
@@ -77198,6 +77250,10 @@ h2 {
     --bg-opacity: 0.75;
   }
 
+  .xl\:hover\:bg-opacity-98:hover {
+    --bg-opacity: 0.98;
+  }
+
   .xl\:hover\:bg-opacity-100:hover {
     --bg-opacity: 1;
   }
@@ -77216,6 +77272,10 @@ h2 {
 
   .xl\:focus\:bg-opacity-75:focus {
     --bg-opacity: 0.75;
+  }
+
+  .xl\:focus\:bg-opacity-98:focus {
+    --bg-opacity: 0.98;
   }
 
   .xl\:focus\:bg-opacity-100:focus {
