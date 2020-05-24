@@ -19050,7 +19050,8 @@ html {
 
 h1,
 h2 {
-  font-family: "Permanent Marker", cursive;
+  font-family: chantal, sans-serif;
+  font-style: normal;
 }
 
 @media (min-width: 640px) {
