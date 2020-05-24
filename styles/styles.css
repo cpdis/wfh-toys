@@ -13,3 +13,17 @@ h2 {
   font-family: chantal, sans-serif;
   font-style: normal;
 }
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: #f7fafc;
+    color: black;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1a202c;
+    color: #f7fafc;
+  }
+}
