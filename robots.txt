@@ -1,4 +1,4 @@
 User-agent: * 
 Disallow:
 
-Sitemap: https://wfh.toy/sitemap.xml
+Sitemap: https://wfh.toys/sitemap.xml
