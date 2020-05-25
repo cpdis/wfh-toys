@@ -13,6 +13,7 @@
     "@fullhuman/postcss-purgecss": "^2.2.0",
     "autoprefixer": "^9.8.0",
     "cssnano": "^4.1.10",
+    "gitmoji-cli": "^3.2.4",
     "postcss-cli": "^7.1.1",
     "tailwindcss": "^1.4.6"
   }
