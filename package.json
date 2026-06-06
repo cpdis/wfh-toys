@@ -11,6 +11,9 @@
     "build:site": "node scripts/build-site.mjs",
     "build:css": "postcss styles/styles.css -o styles/output.css"
   },
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.2.0",
     "autoprefixer": "^9.8.0",

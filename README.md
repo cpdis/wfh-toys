@@ -20,6 +20,8 @@ The data file intentionally avoids hard-coded Amazon prices. Amazon inventory an
 
 ## Install
 
+Use Node.js 24.x. Vercel also reads this from `package.json` so production builds do not fall back to an old project-level runtime.
+
 ```bash
 npm install
 ```
