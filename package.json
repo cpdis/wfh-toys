@@ -7,19 +7,12 @@
   "repository": "https://github.com/cpdis/wfh-toys",
   "license": "ISC",
   "scripts": {
-    "build": "npm run build:site && npm run build:css",
+    "build": "npm run build:site && npm run build:css && npm run build:public",
     "build:site": "node scripts/build-site.mjs",
-    "build:css": "postcss styles/styles.css -o styles/output.css"
+    "build:css": "node scripts/build-css.mjs",
+    "build:public": "node scripts/prepare-vercel-output.mjs"
   },
   "engines": {
     "node": "24.x"
-  },
-  "dependencies": {
-    "@fullhuman/postcss-purgecss": "^2.2.0",
-    "autoprefixer": "^9.8.0",
-    "cssnano": "^4.1.10",
-    "gitmoji-cli": "^3.2.4",
-    "postcss-cli": "^7.1.1",
-    "tailwindcss": "^1.4.6"
   }
 }

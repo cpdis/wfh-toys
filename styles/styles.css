@@ -1,8 +1,8 @@
-/* npx tailwind build styles.css -o output.css */
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 :root {
   --wfh-paper: #f4efe6;
@@ -21,6 +21,11 @@ body {
   background: var(--wfh-paper);
   color: var(--wfh-ink);
   font-family: "IBM Plex Sans", sans-serif;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
 }
 
 h1,
@@ -190,6 +195,26 @@ h3 {
   font-weight: 800;
   padding: 0.2rem 0.55rem;
   text-transform: uppercase;
+}
+
+.product-badge-amber {
+  background: #fff2c0;
+  color: #7a4a00;
+}
+
+.product-badge-pink {
+  background: #ffe1ea;
+  color: #8e2449;
+}
+
+.product-badge-red {
+  background: #ffd9ca;
+  color: #9c2718;
+}
+
+.product-badge-teal {
+  background: #ccefe8;
+  color: #07584f;
 }
 
 .source-link {

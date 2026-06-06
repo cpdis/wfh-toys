@@ -39,5 +39,7 @@ The existing page is a static 2020-era catalog with many hard-coded prices, old 
 - Added 15 current WFH equipment picks across video, audio, desk, infrastructure, and resources.
 - Added `data/gear.mjs` as the single product-editing surface.
 - Added `scripts/build-site.mjs` and `npm run build` to regenerate the page and CSS.
+- Added a Vercel `public/` build artifact step so production serves only deployable static files.
+- Removed the obsolete Tailwind/PostCSS dependency chain after the generated catalog no longer needed it.
 - Verified Amazon shopping links carry `tag=heismukamily-20`.
 - Verified desktop and mobile rendering with Playwright: no broken images, failed requests, console errors, or horizontal overflow.

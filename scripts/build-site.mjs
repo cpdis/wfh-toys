@@ -9,10 +9,10 @@ const site = {
 };
 
 const accentClasses = {
-  amber: "bg-yellow-100 text-yellow-900 border-yellow-300",
-  pink: "bg-pink-100 text-pink-900 border-pink-300",
-  red: "bg-red-100 text-red-900 border-red-300",
-  teal: "bg-teal-100 text-teal-900 border-teal-300",
+  amber: "product-badge-amber",
+  pink: "product-badge-pink",
+  red: "product-badge-red",
+  teal: "product-badge-teal",
 };
 
 const escapeHtml = (value) =>
@@ -141,7 +141,7 @@ const html = `<!DOCTYPE html>
     </main>
     <footer class="site-footer">
       <p>As an Amazon Associate, Colin earns from qualifying purchases. Maker links are direct unless marked otherwise.</p>
-      <p>Built with Tailwind CSS, static HTML, and enough restraint to avoid publishing 2020 webcam panic forever.</p>
+      <p>Built with static HTML, product data, and enough restraint to avoid publishing 2020 webcam panic forever.</p>
     </footer>
   </body>
 </html>

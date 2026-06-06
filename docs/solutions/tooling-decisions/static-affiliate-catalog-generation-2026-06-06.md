@@ -25,6 +25,8 @@ Keep the deployed page static, but generate it from a small product data module.
 
 - Put products, source URLs, images, and shopping links in `data/gear.mjs`.
 - Use a generator such as `scripts/build-site.mjs` to render `index.html`.
+- Copy the built static assets into a dedicated deploy directory such as `public/`.
+- Keep the CSS build dependency-free when the catalog only needs project CSS.
 - Generate Amazon links through one helper that always appends the configured associate tag.
 - Avoid hard-coded prices unless they come from a compliant live source.
 - Keep manufacturer or review source links visible so future editors know why a product is present.
@@ -33,6 +35,10 @@ Keep the deployed page static, but generate it from a small product data module.
 ## Why This Matters
 
 Static HTML keeps hosting simple and crawlable. A data file keeps product refreshes sane. The affiliate helper prevents a mix of old short links, missing tags, and accidental untracked Amazon URLs. Removing prices avoids publishing stale or non-compliant pricing text.
+
+A dedicated deploy directory keeps Vercel from serving source files, docs, or build scripts when the source repo root is also the editing workspace.
+
+Removing unused CSS tooling keeps the production build compatible with current Node versions and avoids installing stale transitive dependencies for a static page.
 
 ## When to Apply
 
